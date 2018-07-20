@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Exercise</title>
+  <style>
+    #form #fs label { display:inline-block; min-width :100px;}
+    #form #fs input { display:inline-block; min-width :175px;}
+
+  </style>
+</head>
+<body style="background: lightgrey;">
+		<h1 style="text-align: center">HTML form Exercise</h1>
+    <p>
+      <span style = "color:red;">Please note:</span> This Example demonstrates how HTML forms can be used.Submit button should submit the button and reset button should reset the form(revert the changes in form fields). The form layout should be the same as below.
+    </p>      
+    <form id='form'>
+      <fieldset style="border:none;" id="fs">
+        <legend><b>Contact form</b></legend>  
+        <label for="name">Your name<sup>*</<sup>: </label>
+        <input type="text" id="name" required> <br/>
+        <label for="email">Email<sup>*</<sup>: </label>
+        <input type="text" id="email" required><br/>
+
+        <label for="phonenumber">Phone number: </label>
+        <input type="text" id="phonenumber"><br/>
+
+        <label for="website">Website<sup>*</<sup>: </label>
+        <input type="text" style="width:220px" id="website" value="http://" required><br/>
+      </fieldset><br/>
+
+      <div>Comments<sup>*</sup></div>
+      <textarea rows="8" cols="40" required></textarea><br/></br>
+
+      <div><b>Text Field</b></div>
+      <label for="name1">Your name:</label>
+      <input type="text" id="name1"> <br/><br/>
+
+      <div><b>Password field</b></div>
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd"> <br/><br/>
+
+      <div><b>Radio buttons</b></div>
+      Do you like pizza?<br>
+      <input type="radio" name="pizza" value="yes" checked>Yes<br/>
+      <input type="radio" name="pizza" value="no">No<br/>
+      <input type="radio" name="pizza" value="maybe">Maybe<br/>
+      <input type="radio" name="pizza" value="never tried">Never tried<br/><br/>
+
+      <div><b>Checkbox</b></div>
+      <input type="checkbox" name="service" value="yes">Check this box if you like our service<br/><br/>
+
+      <div><b>TextArea</b></div>
+      Anything you would like to say?<br/>
+      <textarea rows="5" cols="60"></textarea><br/></br>
+
+      <div><b>I Like</b></div><br/>
+      <select name="vegetables" size=5>
+        <option value="mushrooms">mushrooms</option>
+        <option value="green peppers">green peppers</option>
+        <option value="onions">onions</option>
+        <option value="tomatoes">tomatoes</option>
+        <option value="olives">olives</option>
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+      </select><br/><br/>    
+
+
+      <div><b>Menu</b></div>  
+      Your favorite color:<br/>
+      <select name="colors">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="orange">orange</option>
+      </select><br/><br/>        
+
+      <b>Attach file</b><br>
+      <input type="text" name="filename">
+      <input type="file" name="file" value="file" onchange="this.form.filename.value = this.value"><br/><br/>
+
+      <div><b>Buttons</b></div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+    </form>
+
+</body>
